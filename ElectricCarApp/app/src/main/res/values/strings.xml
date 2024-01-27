@@ -12,6 +12,8 @@
     <string name="calcular">Calcular</string>
     <string name="calcular_autonomia">Calcular autonomia</string>
     <string name="no_wifi">Ops, Internet não disponível ):</string>
+    <string name="response_error">Algo deu erradp, por favor tente novamente mais tarde</string>
+    <string name="saved_calc">saved_calc</string>
     <string-array name="array_cidades">
         <item>Araraquara</item>
         <item>Taquaringa</item>

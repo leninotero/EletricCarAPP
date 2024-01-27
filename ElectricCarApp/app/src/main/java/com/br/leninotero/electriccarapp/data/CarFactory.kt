@@ -10,7 +10,8 @@ object CarFactory {
             bateria = "300 kWh",
             potencia = "200cv",
             recarga = "30 min",
-            urlPhoto = "www.google.com.br"
+            urlPhoto = "www.google.com.br",
+            isFavorite = false
         ),
         Carro(
             id = 2,
@@ -18,7 +19,8 @@ object CarFactory {
             bateria = "200 kWh",
             potencia = "150cv",
             recarga = "40 min",
-            urlPhoto = "www.google.com.br"
+            urlPhoto = "www.google.com.br",
+            isFavorite = false
         )
     )
 }
