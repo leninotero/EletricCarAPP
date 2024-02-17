@@ -9,7 +9,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.br.leninotero.electriccarapp.R
 import com.br.leninotero.electriccarapp.domain.Carro
 
-class CarAdapter(private val carros: List<Carro>) : RecyclerView.Adapter<CarAdapter.ViewHolder>() {
+class CarAdapter(private val carros: List<Carro>, private val isFavoriteScreen : Boolean = false) :
+    RecyclerView.Adapter<CarAdapter.ViewHolder>() {
 
     var carItemListener: (Carro) -> Unit = {}
     //cria uma nova view
@@ -24,6 +25,9 @@ class CarAdapter(private val carros: List<Carro>) : RecyclerView.Adapter<CarAdap
         holder.bateria.text = carros[position].bateria
         holder.potencia.text = carros[position].potencia
         holder.recarga.text = carros[position].recarga
+        if (isFavoriteScreen){
+            holder.favorito.setImageResource(R.drawable.ic_star_selected)
+        }
         holder.favorito.setOnClickListener{
             val carro = carros[position]
             carItemListener(carro)

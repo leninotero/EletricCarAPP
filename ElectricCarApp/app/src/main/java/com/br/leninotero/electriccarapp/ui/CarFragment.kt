@@ -125,7 +125,9 @@ class CarFragment : Fragment() {
             adapter = carroAdapter
         }
         carroAdapter.carItemListener = { carro ->
-            CarRepository(requireContext()).save(carro)
+//            val isSaved = CarRepository(requireContext()).save(carro)
+//            CarRepository(requireContext()).findCarById(carro.id)
+            CarRepository(requireContext()).saveIfNotExist(carro)
         }
     }
 
